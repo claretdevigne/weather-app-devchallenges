@@ -67,14 +67,14 @@ $darkBackground: #100E1D;
   
 
   img {
-    height: 50%;
-    width: min-content;
+    height: 40%;
+    width: fit-content;
     justify-self: center;
   }
 
   .week-container-card-container {
     width: 47%;
-    height: 100%;
+    height: 200px;
     padding-bottom: 1rem;
     margin-bottom: 5%;
 

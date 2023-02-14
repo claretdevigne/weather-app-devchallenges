@@ -144,7 +144,7 @@ export default function Week(props) {
         props.daily.time.map((item, index) => {
           if (index > 0) {
             return (
-              <div key={index} className='week-container-card-container d-flex flex-column justify-content-between p-4 text-white'>
+              <div key={index} className='week-container-card-container d-flex flex-column justify-content-between align-items-center p-4 text-white'>
                 {
                   ( index === 1) ?
                     <div className='text-center'>Tomorrow</div>
