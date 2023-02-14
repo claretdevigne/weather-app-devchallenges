@@ -56,7 +56,7 @@ export default function Highlights(props) {
       <div className='highlights-container-card-container p-3 text-white d-flex flex-column align-items-center'>
         <div>Humidity</div>
         <div className='d-flex align-items-center'>
-          <span className='text-1'>84</span>
+          <span className='text-1'>{ props.humidity }</span>
           <span className='text-2'>%</span>
         </div>
         <div className='text-white d-flex w-100'>
@@ -65,7 +65,7 @@ export default function Highlights(props) {
           <div className="col text-end">100</div>
         </div>
         <div  className='highlights-container-card-container-percentage-bar-container bg-white'>
-          <div className="highlights-container-card-container-percentage-bar-content bg-warning"></div>
+          <div style={{ width: `${props.humidity}%` }} className="highlights-container-card-container-percentage-bar-content bg-warning"></div>
         </div>
         <div className='text-secondary text-end w-100'>%</div>
       </div>
@@ -73,7 +73,7 @@ export default function Highlights(props) {
       <div className='highlights-container-card-container p-3 text-white d-flex flex-column align-items-center'>
         <div>Visibility</div>
         <div className='d-flex align-items-center gap-2'>
-          <span className='text-1'>6,4</span>
+          <span className='text-1'>{ props.visibility }</span>
           <span className='text-2'>miles</span>
         </div>
       </div>

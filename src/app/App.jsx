@@ -11,8 +11,8 @@ export default function App() {
   const [location, setLocation] = useState("Cancun")
   const [showMenu, setShowMenu] = useState(false)
   const urls = {
-    "Cancun": 'https://api.open-meteo.com/v1/forecast?latitude=21.17&longitude=-86.85&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=auto&start_date=2023-02-11&end_date=2023-02-16',
-    "MexicoCity": "https://api.open-meteo.com/v1/forecast?latitude=19.43&longitude=-99.13&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=auto&start_date=2023-02-11&end_date=2023-02-16"
+    "Cancun": 'https://api.open-meteo.com/v1/forecast?latitude=21.17&longitude=-86.85&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=auto&start_date=2023-02-11&end_date=2023-02-16&hourly=visibility,relativehumidity_30hPa',
+    "MexicoCity": "https://api.open-meteo.com/v1/forecast?latitude=19.43&longitude=-99.13&daily=weathercode,temperature_2m_max,temperature_2m_min,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=auto&start_date=2023-02-11&end_date=2023-02-16&hourly=visibility,relativehumidity_30hPa"
   }
 
   const connect = async () => {
@@ -46,7 +46,7 @@ export default function App() {
             <Today show={ setShowMenu } location={ location } data={ (data) ? data.current_weather : null } />
             <div>
               <Week daily={ (data) ? data.daily : null }/>
-              <Highlights windspeed={ (data) ? data.current_weather.windspeed : null } winddirection={ (data) ? data.current_weather.winddirection : null } />
+              <Highlights visibility={ (data) ? data.hourly.visibility[0] : null } humidity={ (data) ? data.hourly.relativehumidity_30hPa[0] : null } windspeed={ (data) ? data.current_weather.windspeed : null } winddirection={ (data) ? data.current_weather.winddirection : null } />
             </div>
           </div>
       }

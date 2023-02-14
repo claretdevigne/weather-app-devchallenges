@@ -20,7 +20,7 @@ $darkBackground: #100E1D;
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1211px) {
     flex-direction: row;
   }
 }
@@ -51,7 +51,7 @@ $darkBackground: #100E1D;
     font-size: 1.2rem;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1211px) {
     width: 30vw;
     height: 100vh;
   }
@@ -67,23 +67,25 @@ $darkBackground: #100E1D;
   
 
   img {
-    width: 80%;
+    height: 50%;
+    width: fit-content;
+    justify-self: center;
   }
 
   .week-container-card-container {
     width: 47%;
-    height: 40vh;
+    height: 100%;
     padding-bottom: 1rem;
     margin-bottom: 5%;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1211px) {
       width: 18%;
       height: 100%;
       gap: 5%;
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1211px) {
     justify-content: center;
     align-items: center;
     width: 70vw;
@@ -117,7 +119,7 @@ $darkBackground: #100E1D;
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1211px) {
     justify-content: center;
     align-items: center;
     gap: 4%;
@@ -133,7 +135,7 @@ $darkBackground: #100E1D;
 .highlights-container-card-container {
   width: 100%;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1211px) {
     width: 47%;
     height: 180px;
     justify-content: center;
