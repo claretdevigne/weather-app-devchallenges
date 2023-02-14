@@ -1,0 +1,154 @@
+$ligthBackground: #1E213A;
+$darkBackground: #100E1D;
+
+.today-container,
+.menu-container {
+  background-color: $ligthBackground;
+}
+
+.week-container,
+.highlights-container {
+  background-color: $darkBackground;
+}
+
+.week-container-card-container,
+.highlights-container-card-container {
+  background-color: $ligthBackground;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+.today-container {
+  width: 100vw;
+  height: 100vh;
+
+  img {
+    width: 150px;
+  }
+
+  .today-container-temperature-number {
+    font-size: 8rem;
+    font-weight: 600;
+  }
+
+  .today-container-temperature-centigrades {
+    font-size: 4rem;
+  }
+
+  .today-container-weather-name {
+    font-size: 2.5rem;
+  }
+
+  .today-container-date,
+  .today-container-location {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1000px) {
+    width: 30vw;
+    height: 100vh;
+  }
+}
+
+.week-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+  gap: 5%;
+  height: 120%;
+  
+
+  img {
+    width: 80%;
+  }
+
+  .week-container-card-container {
+    width: 47%;
+    height: 40vh;
+    padding-bottom: 1rem;
+    margin-bottom: 5%;
+
+    @media (min-width: 1000px) {
+      width: 18%;
+      height: 100%;
+      gap: 5%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 35vh;
+    gap: 2.5%;
+  }
+}
+
+.highlights-container {
+
+  padding: 0 1rem;
+  gap: 1rem;
+
+  .text-1 {
+    font-size: 4rem;
+  }
+
+  .text-2 {
+    font-size: 2rem;
+  }
+
+  .highlights-container-card-container-percentage-bar-container {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+
+    .highlights-container-card-container-percentage-bar-content {
+      width: 84%;
+      height: 10px;
+      border-radius: 15px
+    }
+  }
+
+  @media (min-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    padding: 4%;
+    height: 65vh;
+
+    .text-1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.highlights-container-card-container {
+  width: 100%;
+
+  @media (min-width: 1000px) {
+    width: 47%;
+    height: 180px;
+    justify-content: center;
+  }
+}
+
+
+.menu-container{
+
+  input {
+    background-color: $ligthBackground;
+    border: 1px solid white;
+    
+    &::placeholder {
+      color: gray
+    }
+  }
+}
