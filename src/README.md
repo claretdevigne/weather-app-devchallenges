@@ -27,4 +27,4 @@ Clicking in the "Search for places" button you can open the menu and select a ci
 can select between "Cancun, Mexico" and "Mexico city, Mexico". No more cities were added cuz it's something easy to do and this is not the goal of the creations of this weather app.
 
 ## AUTHOR
-Created by [Claret Devigne](https:\\claretdevigne.netlify.app) | Email: claretdevinge@gmail.com
+Created by [Claret Devigne](https://claretdevigne.netlify.app) | Email: claretdevinge@gmail.com
