@@ -61,8 +61,8 @@
 }
 .week-container img {
   height: 50%;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-min-content;
+  width: min-content;
   justify-self: center;
 }
 .week-container .week-container-card-container {
